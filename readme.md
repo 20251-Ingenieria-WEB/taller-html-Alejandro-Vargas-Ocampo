@@ -1,10 +1,10 @@
 # taller-html-Alejandro-Vargas-Ocampo
 
-#Propósito del Proyecto  
+Propósito del Proyecto  
   
 Este proyecto permite buscar personajes de la serie Rick and Morty utilizando una API pública. Está enfocado en la práctica de consumo de APIs REST y manipulación del DOM.
 
-#¿Cómo Ejecutarlo?  
+¿Cómo Ejecutarlo?  
   
 1. Descargar o clonar este repositorio.  
 2. Ubicar todos los archivos en una misma carpeta: index.html, style.css, script.js, logo.webp.  
