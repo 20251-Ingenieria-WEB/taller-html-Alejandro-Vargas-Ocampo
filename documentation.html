@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation - Buscador Rick and Morty</title>
+  <link rel="icon" href="logo.webp" type="image/webp" />
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.webp" alt="Logo" class="logo-img" />
+      Buscador de Rick and Morty
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="readme.html">Read me</a>
+      <a href="documentation.html" class="active">Documentación</a>
+    </nav>
+  </header>
+
+  <main class="content-box">
+    <h1>Documentación Técnica</h1>
+
+    <h2>Estructura del Proyecto</h2>
+    <ul>
+      <li><strong>index.html:</strong> Página principal con el buscador de personajes.</li>
+      <li><strong>style.css:</strong> Contiene los estilos visuales del sitio.</li>
+      <li><strong>script.js:</strong> Maneja la lógica de búsqueda y visualización.</li>
+    </ul>
+
+    <h2>Lógica del Código</h2>
+    <p>La función principal <code>searchCharacters()</code> realiza los siguientes pasos:</p>
+    <ol>
+      <li>Obtiene el nombre ingresado por el usuario.</li>
+      <li>Valida que sea texto válido (solo letras y espacios).</li>
+      <li>Consulta la API pública de Rick and Morty.</li>
+      <li>Renderiza los primeros 10 personajes como tarjetas HTML dinámicamente.</li>
+      <li>Muestra mensajes de error si no hay resultados o si la entrada es inválida.</li>
+    </ol>
+
+    <h2>Comentarios en el Código</h2>
+<p>Se han incluido comentarios explicativos en los siguientes archivos para facilitar el entendimiento y mantenimiento del código:</p>
+<ul>
+  <li><strong>script.js:</strong> Explica el flujo principal de la búsqueda, validación y renderizado dinámico.</li>
+  <li><strong>index.html:</strong> Contiene comentarios para estructurar semánticamente el contenido (header, main, footer) y navegación.</li>
+  <li><strong>style.css:</strong> Incluye etiquetas que separan secciones como reset básico, navbar, buscador, tarjetas y pie de página.</li>
+</ul>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Buscador de Rick and Morty. Ingeniería Web.</p>
+      <p>alejandro.vargaso@udea.edu.co. Datos obtenidos de la <a href="https://rickandmortyapi.com/" target="_blank">Rick and Morty API</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

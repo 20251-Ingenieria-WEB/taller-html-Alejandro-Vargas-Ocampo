@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento (HTML5) -->
+<html lang="en">
+<head>
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador Rick and Morty</title>
+
+  <!-- Ícono de la pestaña del navegador (favicon) -->
+  <link rel="icon" href="logo.webp" type="image/webp" />
+
+  <!-- Enlace al archivo de estilos externo -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Conexión previa a Google Fonts para mejor rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Importación de la fuente Segoe UI desde Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap">
+</head>
+<body>
+
+  <!-- Encabezado con barra de navegación -->
+  <header class="navbar">
+    <!-- Logo con imagen y nombre del proyecto -->
+    <div class="logo">
+      <img src="logo.webp" alt="Logo" class="logo-img" />
+      Buscador de Rick and Morty
+    </div>
+
+    <!-- Navegación principal del sitio (Se tiene un nav bar con Home, read me y documentación) -->
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="readme.html">Read me</a>
+      <a href="documentation.html">Documentación</a>
+    </nav>
+  </header>
+
+  <!-- Sección principal para búsqueda de personajes -->
+  <main class="search-section">
+    <h1>Encuentra tu personaje favorito</h1>
+
+    <!-- Cuadro de búsqueda con input y botón -->
+    <div class="search-box">
+      <input type="text" placeholder="Nombre del personaje..." id="searchInput" />
+      <!-- Llamado a la función, al hacer click en el botón -->
+      <button onclick="searchCharacters()">Buscar</button>
+    </div>
+
+    <!-- Contenedor donde se mostrarán los resultados de la búsqueda -->
+    <div id="results" class="results"></div>
+  </main>
+
+  <!-- Pie de página con información del proyecto -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Buscador de Rick and Morty. Ingeniería Web.</p>
+      <p>alejandro.vargaso@udea.edu.co. Datos obtenidos de la 
+        <a href="https://rickandmortyapi.com/" target="_blank">Rick and Morty API</a>.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Enlace al archivo de JavaScript principal, donde se encuentra la función searchCharacters -->
+  <script src="script.js"></script>
+</body>
+</html>
